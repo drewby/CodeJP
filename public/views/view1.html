@@ -1,0 +1,13 @@
+Search: <input ng-model="query" />
+ 
+Sort: <select ng-model="orderProp">
+	<option value="name">Alphabetical</option>
+	<option value="age">Youngest</option>
+</select>
+ 
+<ul>
+	<li ng-repeat="person in people | filter:query | orderBy:orderProp">
+		{{person.description}} {{person.name}} is {{person.age}}
+	</li>
+	
+</ul>

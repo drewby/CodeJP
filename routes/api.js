@@ -13,7 +13,10 @@ exports.people = function(req, res){
        "description": "old" },
       {"name": "Jun-ichi Sakamoto",
        "age": "85",
-       "description": "very old" }
+       "description": "very old" },
+      {"name": "Daisuke Inoue",
+       "age": "27",
+       "description": "cool" }
     ];
 
   res.json(people);
